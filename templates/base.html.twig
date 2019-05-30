@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <!-- Compiled and minified CSS -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <title>Back'n Dev {% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" type="text/css">
+    <body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="left hide-on-med-and-down">
+                <li><a class="size" href="{{ path('index') }}">Accueil</a></li>
+                <li><a class="size" href="{{ path('benefits') }}">Prestations</a></li>
+                <li><a class="size" href="{{ path('contact') }}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li><a class="size" href="{{ path('index') }}">Accueil</a></li>
+        <li><a class="size" href="{{ path('benefits') }}">Préstations</a></li>
+        <li><a class="size" href="{{ path('contact') }}">Contact</a></li>
+    </ul>
+
+    <div class="spacer">
+        <div class="space-in">
+            <h1 class="title-spacer">Besoin d'un <span class="blue-text">site</span> ?</h1>
+            <h5 class="space-in">
+                Back'n <span class="blue-text">Dev</span> s'occupe de tout ! Du développement à la mise en production vous n'aurez pas besoin de vous en soucier !
+            </h5>
+        </div>
+    </div>
+
+    {% block body %}{% endblock %}
+
+    <footer class="page-footer white">
+        <div class="container">
+            <div class="row white nomargin">
+                <div class="col l6 s12">
+                    <h5 class="black-text">Back'n <span class="blue-text">Dev</span></h5>
+                    <ul>
+                        <li><p class="black-text text-lighten-3">154 route des contamines</p></li>
+                        <li><p class="black-text text-lighten-3">Argonay</p></li>
+                        <li><p class="black-text text-lighten-3">tel : 06 31 12 51 86</p></li>
+                        <li><p class="black-text text-lighten-3">Siret : 843 785 619 000 19</p></li>
+                        <li><p class="black-text text-lighten-3">Mail : damien@backndev.fr</p></li>
+                    </ul>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="black-text">Nos <span class="blue-text">partenaires</span></h5>
+                    <ul>
+                        <li><a class="black-text text-lighten-3" href="https://teamflow40212647.wordpress.com/" target="_blank"><img class="teamflow" src="{{ asset('assets/img/teamflow.png') }}" alt="logo teamflow"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });
+
+    </script>
+    </body>
+</html>

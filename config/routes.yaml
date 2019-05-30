@@ -1,0 +1,15 @@
+index:
+    path: /
+    controller: App\Controller\HomeController::index
+
+benefits:
+    path: /benefits
+    controller: App\Controller\BenefitsController::index
+
+benefits_create:
+    path: /admin/benefits/create
+    controller: App\Controller\BenefitsController::create
+
+contact:
+    path: /contact
+    controller: App\Controller\HomeController::contact

@@ -1,0 +1,67 @@
+body{
+    background: url("../img/code.png") fixed top;
+    background-size: auto auto;
+}
+
+nav{
+    background: url("../img/wp.jpg") fixed top;
+    background-size: auto auto;
+    min-height: 40vh;
+}
+
+.size{
+    font-size: 1.5em;
+}
+
+.spacer{
+    min-height: 30vh;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 600px){
+    .space-in{
+        text-align: center;
+        padding: 3em;
+        word-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 601px){
+    .space-in{
+        text-align: center;
+        padding: 1em;
+        word-wrap: break-word;
+    }
+}
+
+
+.title-spacer{
+    margin: 0;
+    word-wrap: break-word;
+}
+
+.white-custom{
+    background: linear-gradient(rgba(255,255,255,1) 70%, rgba(80, 100, 255, 0.3)) fixed;
+    margin: 0;
+}
+
+.teamflow{
+    width: 50%;
+}
+
+.margin{
+    margin: 1em;
+}
+
+.center{
+    text-align: center;
+}
+
+.blue-custom{
+    box-shadow: 2px 2px 2px dodgerblue;
+    margin: 1em;
+}
+
+.nomargin{
+    margin: 0;
+}
