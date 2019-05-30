@@ -1,6 +1,7 @@
 body{
     background: url("../img/code.png") fixed top;
     background-size: auto auto;
+    word-wrap: break-word;
 }
 
 nav{
@@ -34,6 +35,12 @@ nav{
     }
 }
 
+@media screen and (max-width: 750px){
+    .logo-wrap{
+        display: none;
+    }
+}
+
 
 .title-spacer{
     margin: 0;
@@ -64,4 +71,34 @@ nav{
 
 .nomargin{
     margin: 0;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-wrap{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 10px
+}
+
+.w100{
+    width: 100%;
+    margin-top: 0;
+}
+
+.marg-bot{
+    margin-bottom: 10em;
+}
+
+.black-text::placeholder{
+    color: #000;
+}
+
+.marg-more{
+    margin:0 0 3em 0;
 }

@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="icon" href="{{ asset('assets/img/fav.png') }}" type="image/png"/>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
         <!-- Compiled and minified CSS -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -22,26 +24,14 @@
             <a href="#!" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="left hide-on-med-and-down">
                 <li><a class="size" href="{{ path('index') }}">Accueil</a></li>
-                <li><a class="size" href="{{ path('benefits') }}">Prestations</a></li>
                 <li><a class="size" href="{{ path('contact') }}">Contact</a></li>
             </ul>
         </div>
     </nav>
-
     <ul class="sidenav" id="mobile-demo">
         <li><a class="size" href="{{ path('index') }}">Accueil</a></li>
-        <li><a class="size" href="{{ path('benefits') }}">Préstations</a></li>
         <li><a class="size" href="{{ path('contact') }}">Contact</a></li>
     </ul>
-
-    <div class="spacer">
-        <div class="space-in">
-            <h1 class="title-spacer">Besoin d'un <span class="blue-text">site</span> ?</h1>
-            <h5 class="space-in">
-                Back'n <span class="blue-text">Dev</span> s'occupe de tout ! Du développement à la mise en production vous n'aurez pas besoin de vous en soucier !
-            </h5>
-        </div>
-    </div>
 
     {% block body %}{% endblock %}
 
